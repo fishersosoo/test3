@@ -42,8 +42,8 @@ package math.math;
  * @since   1.3
  */
 
-import static java.math.BigDecimal.INFLATED;
-import static java.math.BigInteger.LONG_MASK;
+import static math.math.BigDecimal.INFLATED;
+import static math.math.BigInteger.LONG_MASK;
 import java.util.Arrays;
 
 class MutableBigInteger {

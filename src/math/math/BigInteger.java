@@ -2760,7 +2760,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
      * Returns -1, 0 or +1 as big-endian unsigned int array arg1 is less than,
      * equal to, or greater than arg2 up to length len.
      */
-    private static int intArrayCmpToLen(int[] arg1, int[] arg2, int len) {
+    public static int intArrayCmpToLen(int[] arg1, int[] arg2, int len) {
         for (int i=0; i < len; i++) {
             long b1 = arg1[i] & LONG_MASK;
             long b2 = arg2[i] & LONG_MASK;
@@ -3044,7 +3044,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
         return new BigInteger(newMag, signum);
     }
 
-    int[] javaIncrement(int[] val) {
+    public int[] javaIncrement(int[] val) {
         int lastSum = 0;
         for (int i=val.length-1;  i >= 0 && lastSum == 0; i--)
             lastSum = (val[i] += 1);

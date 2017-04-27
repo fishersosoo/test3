@@ -30,7 +30,7 @@
 package math.math;
 
 import java.util.Arrays;
-import static java.math.BigInteger.LONG_MASK;
+import static math.math.BigInteger.LONG_MASK;
 
 /**
  * Immutable, arbitrary-precision signed decimal numbers.  A
